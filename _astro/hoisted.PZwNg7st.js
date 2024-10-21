@@ -1,5 +1,3 @@
-/* empty css                                */
-
 var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
 function getDefaultExportFromCjs (x) {
@@ -15,13 +13,4 @@ var aos = {exports: {}};
 var aosExports = aos.exports;
 const Aos = /*@__PURE__*/getDefaultExportFromCjs(aosExports);
 
-console.log("What?");
-console.log("Hello world, from main.js!");
-if (typeof window !== "undefined") {
-  // Put code that runs ONLY in the browser here -- this is most likely where
-  // MOST of your code should go.
-  //
-  Aos.init();
-  // If you see a SSR error, try moving your code here!
-  console.log("Hello world, browser :-)");
-}
+Aos.init();
