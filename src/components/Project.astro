@@ -8,17 +8,17 @@ let { title, assignment } = Astro.props;
   <div class="container">
     <header>
       <h1>
-        Project: {title}
+        Project: <span set:html={title}></span>
       </h1>
       <nav>
-        <a href="../../">Back to Portfolio</a>
+        <a href="../../"><i class="fa fa-solid fa-backward"></i></a>
       </nav>
     </header>
     <article>
       <p>
         Assignment: {assignment}
       </p>
-      <hr>
+      <hr />
       <slot />
     </article>
   </div>
